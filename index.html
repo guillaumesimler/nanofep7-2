@@ -22,6 +22,8 @@ Programmed by Guillaume Simler
 <body>
 
 	<header>
+
+		<h1>Healthtracker</h1>
 		<input type="seach" placeholder="Insert your search criteria (tbd)">
 
 		<button>Add</button>
@@ -38,39 +40,43 @@ Programmed by Guillaume Simler
 
 	</header>
 
-	<section id="FoodItems">
+	<div class="display">
+		<section id="FoodItems" class="Items">
+			<h4>Meals detail</h4>
 
-		<table>
-			<tr>
-				<td>Day</td>
-				<td>Meal</td>
-				<td>Food</td>
-				<td>Calories</td>
-			</tr>
-		</table>
+			<table>
+				<tr>
+					<td>Day</td>
+					<td>Meal</td>
+					<td>Food</td>
+					<td>Calories</td>
+				</tr>
+			</table>
 
-	</section>
+		</section>
 
-	<section id="Reporting">
-		<p>	Number of calories taken since </p>
+		<section id="Reporting" class="Reports">
+			<div>
+				<h4>Number of calories taken since </h4>
 
-		<ul> 
-			<li>today: xxxx</li>
-			<li>this week: xxxx</li>
-			<li>this month: xxxx</li>
-		</ul>
+				<ul> 
+					<li>today: xxxx</li>
+					<li>this week: xxxx</li>
+					<li>this month: xxxx</li>
+				</ul>
+			</div>
+	 
+			<div id="graphs-trend">
+				<h4>Graph n°1: Trends</h4>
+				<img src="https://placehold.it/250x250">
+			</div>
 
-	</section>
-
-	<section id="graphs-trend">
-		<p>Graph n°1: Trends</p>
-		<img src="https://placehold.it/250x250">
-	</section>
-
-	<section id="graphs-composition">
-		<p>Graph n°2: Composition</p>
-		<img src="https://placehold.it/250x250">
-	</section>
+			<div id="graphs-composition">
+				<h4>Graph n°2: Composition</h4>
+				<img src="https://placehold.it/250x250">
+			</div>
+		</section>
+	</div>
 
 
 	<!-- Scripts -->

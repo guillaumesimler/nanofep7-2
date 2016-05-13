@@ -1,0 +1,23 @@
+.display {
+	display: -webkit-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.Items {
+	width: 66%;
+	max-width: 900px;
+}
+
+.Reports {
+	width: 34%;
+}
+
+
+table {
+	width: 100%;
+}
+
+td {
+	width: 25%;
+}
