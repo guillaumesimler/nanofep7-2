@@ -29,13 +29,15 @@ Programmed by Guillaume Simler
 		<button>Add</button>
 
 		<br>
+		
+		<div id="input-zone">
+			<input type="seach" placeholder="Search for foodtype">
 
-		<input type="seach" placeholder="Search for foodtype">
-
-		<div>
-			<input type="radio" name="Meal" value="breakfast">Breakfast 
-			<input type="radio" name="Meal" value="lunch">Lunch 
-			<input type="radio" name="Meal" value="dinner">Dinner 
+			<div>
+				<input type="radio" name="Meal" value="breakfast">Breakfast 
+				<input type="radio" name="Meal" value="lunch">Lunch 
+				<input type="radio" name="Meal" value="dinner">Dinner 
+			</div>
 		</div>
 
 	</header>
@@ -51,6 +53,10 @@ Programmed by Guillaume Simler
 					<td>Food</td>
 					<td>Calories</td>
 				</tr>
+
+				<div>
+
+				</div>
 			</table>
 
 		</section>
@@ -68,12 +74,12 @@ Programmed by Guillaume Simler
 	 
 			<div id="graphs-trend">
 				<h4>Graph n°1: Trends</h4>
-				<img src="https://placehold.it/250x250">
+				<img src="https://placehold.it/400x400">
 			</div>
 
 			<div id="graphs-composition">
 				<h4>Graph n°2: Composition</h4>
-				<img src="https://placehold.it/250x250">
+				<img src="https://placehold.it/400x400">
 			</div>
 		</section>
 	</div>
@@ -83,12 +89,23 @@ Programmed by Guillaume Simler
 
 		<!-- Templates -->
 
+		<script id="foodDisplay" type="text/template">
+			<tr>
+				<tb> <%= date => </tb>
+				<tb> <%= meal => </tb>
+				<tb> <%= food => </tb>
+				<tb> <%= calories => </tb>
+			</tr>
+		</script>
+
 		<!-- Libs -->
-		<script scr="backbone-min.js"></script>
-		<script scr="jquery.min.js"></script>
-		<script scr="underscore-min.js"></script>
+		<script scr="js/lib/backbone-min.js"></script>
+		<script scr="js/lib/jquery.min.js"></script>
+		<script scr="js/lib/underscore-min.js"></script>
 
 		<!-- Script & App -->
+		<script src='js/model/food.js'></script>
+		<script src='js/collections/intake.js'></script>
 
 
 </body>
